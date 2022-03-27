@@ -1,7 +1,7 @@
 /* eslint-disable eqeqeq */
 export default class Chat {
   constructor() {
-    this.URL = 'https://dmitryvinogradov-chat.herokuapp.com/';
+    this.URL = 'https://dmitryvinogradov-chat.herokuapp.com';
   }
 
   init() {
