@@ -1,7 +1,7 @@
 /* eslint-disable eqeqeq */
 export default class Chat {
   constructor() {
-    this.URL = 'https://dmitryvinogradov-chat.herokuapp.com/';
+    this.URL = 'https://dmitryvinogradov-chat.herokuapp.com';
   }
 
   init() {
@@ -48,7 +48,7 @@ export default class Chat {
     this.chat.classList.add('chat');
     this.chat.innerHTML = '<ul class =\'user-list\'> </ul> <div class = \'chat-wrapper\'><div class = \'messages\'> </div> <form class = \'message-form\'> <input class = \'message-input\' placeholder = \'Введите свое сообщение\'> </form> </div>';
     document.querySelector('body').appendChild(this.chat);
-    this.ws = new WebSocket('ws:https://dmitryvinogradov-chat.herokuapp.com/ws');
+    this.ws = new WebSocket('wss://dmitryvinogradov-chat.herokuapp.com/ws');
     this.ws.addEventListener('open', () => {
     });
     // eslint-disable-next-line consistent-return
